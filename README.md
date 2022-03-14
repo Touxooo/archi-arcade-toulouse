@@ -1,8 +1,8 @@
 # Architecture commune du projet "Arcade" Epitech Toulouse 2022 
 
-## Fonctionnement du repository :
+## Fonctionnement :
 
-<details open>
+<details>
 <summary> Fonctionnement des pull request </summary>
 <br>
 
@@ -18,6 +18,12 @@ vous ferez les modifications sur celui-ci.
 
 Pour demander l'ajout de votre travail sur le repository, vous allez faire une pull request depuis **votre fork**.
 
-![image down :(](ressources/pull_request_button1.png "bouton pull request")
+![image down :(](ressources/pull_request_button.png "bouton pull request")
+
+vous arrivez donc sur cette page qui repertorie tout vos changements, vous n'avez qu'a créer la pull request.
+
+![oh no :(](ressources/submit_pull_request.png "submit sa pull request")
+
+Voilà vous avez effectué votre pull request, il faut maintenant attendre qu'elle soit validée, ce qui sera fait lors de la prochaine session architecture à l'école.
 
 </details>
