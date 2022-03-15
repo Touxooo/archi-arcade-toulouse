@@ -1,6 +1,6 @@
 # Architecture commune du projet "Arcade" Epitech Toulouse 2022 
 
-## UML v0.2 de l'architecture :
+## UML de l'architecture (toutes les versions):
 
 <details>
 <summary> UML v0.2 de l'architecture </summary>
