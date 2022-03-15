@@ -3,7 +3,7 @@
 ## UML de l'architecture (toutes les versions):
 
 <details>
-<summary> UML v0.2 de l'architecture </summary>
+<summary> UML v0.2 </summary>
 <br>
 
 ![impossible de charger](ressources/arcade-uml-v0.2.png "uml v0.2")
