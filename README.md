@@ -1,6 +1,6 @@
 # Architecture commune du projet "Arcade" Epitech Toulouse 2022 
 
-## UML de l'architecture (toutes les versions):
+## UML de l'architecture (toutes les versions)
 
 <details>
 <summary> UML v0.2 </summary>
@@ -10,7 +10,7 @@
 
 </details>
 
-## Fonctionnement :
+## Fonctionnement
 
 <details>
 <summary> Fonctionnement des pull request </summary>
@@ -43,3 +43,13 @@ Pour finir décrivez vos changements.
 Voilà vous avez effectué votre pull request, il faut maintenant attendre qu'elle soit validée, ce qui sera fait lors de la prochaine session architecture à l'école.
 
 </details>
+
+## Responsables de l'architecture commune
+
+Liste des responsables avec le Discord associé
+
+* Iona DOMMEL-PRIOUX (Dalyo#2514)
+* Izaac CARCENAC-SAUTRON (Izaac#6375)
+* Thomas RABIET (Touxoo#1919)
+
+N'hésitez pas à contacter l'une de ces personnes en cas de problèmes. Utilisez de préférence le Discord associé pour communiquer.
