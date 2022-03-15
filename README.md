@@ -6,7 +6,7 @@
 <summary> UML v0.2 </summary>
 <br>
 
-![impossible de charger](ressources/arcade-uml-v0.2.png "uml v0.2")
+![impossible de charger](uml/arcade-uml-v0.2.png "uml v0.2")
 
 </details>
 
