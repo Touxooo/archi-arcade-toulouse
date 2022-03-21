@@ -2,6 +2,15 @@
 
 ## UML de l'architecture (toutes les versions)
 
+
+<details>
+<summary> UML v0.4 </summary>
+<br>
+
+![impossible de charger](uml/UML-V0.4.png "uml v0.4")
+
+</details>
+
 <details>
 <summary> UML v0.3 </summary>
 <br>
