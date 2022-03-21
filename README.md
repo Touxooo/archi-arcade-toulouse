@@ -1,6 +1,23 @@
-# Architecture commune du projet "Arcade" Epitech Toulouse 2022 
+# Architecture commune du projet "Arcade" Epitech Toulouse 2022
 
 ## UML de l'architecture (toutes les versions)
+
+
+<details>
+<summary> UML v0.4 </summary>
+<br>
+
+![impossible de charger](uml/UML-V0.4.png "uml v0.4")
+
+</details>
+
+<details>
+<summary> UML v0.3 </summary>
+<br>
+
+![impossible de charger](uml/UML-V0.3.png "uml v0.3")
+
+</details>
 
 <details>
 <summary> UML v0.2 </summary>
@@ -22,7 +39,7 @@ Afin que le repository soit le plus propre possible, vous allez donc devoir y av
 Comment faire une pull request ?
 
 Il va tout d'abord devoir forker (copie du repos chez vous) le repository sur votre compte github,
-vous ferez les modifications sur celui-ci. 
+vous ferez les mo3difications sur celui-ci.
 
 ![impossible de charger](ressources/how_to_fork.png "bouton fork")
 
