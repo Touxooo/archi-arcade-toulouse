@@ -8,13 +8,16 @@
 #ifndef ICOMPONENT_HPP_
 #define ICOMPONENT_HPP_
 
-class IComponent
+namespace arcade
 {
-public:
-    virtual ~IComponent() = default;
+    class IComponent
+    {
+    public:
+        virtual ~IComponent() = default;
 
-protected:
-private:
-};
+    protected:
+    private:
+    };
+}
 
 #endif /* !ICOMPONENT_HPP_ */
