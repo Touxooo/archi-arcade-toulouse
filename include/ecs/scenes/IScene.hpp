@@ -23,6 +23,7 @@ public:
     virtual void unpause() = 0;
 
 protected:
+    virtual void update() = 0;
 private:
 };
 
