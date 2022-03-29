@@ -13,6 +13,11 @@
 #else
 #define EXPORT
 #endif
+#include <memory>
+
+#include "ICore.hpp"
+#include "IGame.hpp"
+#include "IGraphical.hpp"
 
 #ifdef __cplusplus
 extern "C" {
@@ -26,9 +31,8 @@ typedef struct metadata {
     const char* desc;
 } metadata_t;
 
-EXPORT void* createLibrary();
-
-EXPORT void deleteLibrary(void* library);
+EXPORT std::unique_ptr<arcade::IGraphical> createLibrary(arcade::ICore& core);
+EXPORT std::unique_ptr<arcade::IGame> createLibrary();
 
 EXPORT metadata_t getLibraryMetadata();
 
