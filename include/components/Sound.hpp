@@ -10,20 +10,19 @@
 
 #include "IComponent.hpp"
 
-namespace arcade {
-    class Sound : public IComponent {
-        public:
-            Sound(const std::string &path) :
-                _isPlaying(false), _filepath(path) {};
-            ~Sound() = default;
+class Sound : public IComponent {
+    public:
+        Sound(const std::string &path) :
+            _start(false), _stop(false), _filepath(path) {};
+        ~Sound() = default;
 
-            // attributes
-            bool _isPlaying;
-            std::string _filepath;
+        // attributes
+        bool _start;
+        bool _stop;
+        std::string _filepath;
 
-        protected:
-        private:
-    };
-}
+    protected:
+    private:
+};
 
 #endif /* !SOUND_HPP_ */
