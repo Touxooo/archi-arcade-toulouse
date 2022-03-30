@@ -10,15 +10,12 @@
 
 #include "IEvent.hpp"
 
-namespace arcade
-{
+namespace arcade {
 
     class ExitEvent : public IEvent
     {
-    public:
-    protected:
-    private:
     };
 
 }
+
 #endif /* !EXITEVENT_HPP_ */

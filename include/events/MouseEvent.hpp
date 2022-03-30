@@ -9,14 +9,12 @@
 
 #include "IEvent.hpp"
 
-namespace arcade
-{
-    
-    class MouseEvent : public arcade::IEvent
+namespace arcade {
+
+    class MouseEvent : public IEvent
     {
     public:
-        enum Button
-        {
+        enum Button {
             None = -1,
             Left,
             Middle,
@@ -31,5 +29,4 @@ namespace arcade
         double _y;
         bool _isPressed;
     };
-
 }

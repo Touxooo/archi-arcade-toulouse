@@ -22,7 +22,6 @@ namespace arcade
 
         virtual IScene &init() = 0;
         virtual IScene &update(const std::uint64_t &deltaTime) = 0;
-        // TODO: Replace raw pointer with reference / smart pointers
         virtual void manageEvents(IEvent &event) = 0;
         virtual void destroy() = 0;
 

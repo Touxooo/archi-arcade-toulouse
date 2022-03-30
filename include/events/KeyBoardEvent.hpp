@@ -132,5 +132,4 @@ namespace arcade
         Key _key;
         ButtonState _state;
     };
-
 }
