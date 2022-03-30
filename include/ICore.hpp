@@ -18,8 +18,7 @@ namespace arcade
     {
     public:
         virtual ~ICore() = default;
-        // TODO: Replace raw pointer with reference / smart pointers
-        virtual void manageEvent(std::unique_ptr<IEvent> event) = 0;
+        virtual void manageEvent(arcade::IEvent &event) = 0;
 
     protected:
     private:

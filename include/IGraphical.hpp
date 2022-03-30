@@ -21,7 +21,7 @@ namespace arcade
         virtual ~IGraphical() = default;
 
         virtual void init(IScene &scene) = 0;
-        virtual void update(IScene &scene, const std::uint64_t &deltaTime) = 0;
+        virtual void update(IScene &scene) = 0;
         virtual void destroy(IScene &scene) = 0;
 
     protected:

@@ -9,12 +9,14 @@
 
 #include "IEvent.hpp"
 
-namespace arcade {
-
-class KeyBoardEvent : public IEvent
+namespace arcade
 {
+
+    class KeyBoardEvent : public IEvent
+    {
     public:
-        enum Key {
+        enum Key
+        {
             Unknown = -1,
             A = 0,
             B,
@@ -125,9 +127,9 @@ class KeyBoardEvent : public IEvent
             Return = Enter
         };
 
-        KeyBoardEvent(const Key &key, bool released) : _key(key), _isReleased(released) {};
+        KeyBoardEvent(const Key &key, ButtonState state) : _key(key), _state(state){};
 
-        bool _isReleased;
         Key _key;
+        ButtonState _state;
     };
 }

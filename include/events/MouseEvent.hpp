@@ -21,8 +21,8 @@ namespace arcade {
             Right
         };
 
-        MouseEvent(double x, double y, bool pressed = false, const Button& button = None)
-            : _btn(button), _x(x), _y(y), _isPressed(pressed) {};
+        MouseEvent(double x, double y, bool pressed = false, const Button &button = None)
+            : _btn(button), _x(x), _y(y), _isPressed(pressed){};
 
         Button _btn;
         double _x;
