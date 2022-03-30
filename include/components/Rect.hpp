@@ -13,12 +13,12 @@
     namespace arcade {
         class Rect : public IComponent {
             public:
-                Rect(double left = 0, double top = 0, double w = 0, double h = 0) : _left(left), _top(top), _w(w), _h(h) {}
+                Rect(double left = 0, double top = 0, double w = 0, double h = 0) : _left(left), _top(top), _width(w), _height(h) {}
 
                 double _left;
                 double _top;
-                double _w;
-                double _h;
+                double _width;
+                double _height;
         };
     }
 

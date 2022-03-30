@@ -21,9 +21,7 @@ namespace arcade
     public:
         virtual ~IScene() = default;
 
-        virtual const std::vector<std::unique_ptr<IEntity>> &getEntities() = 0;
-        virtual void pause() = 0;
-        virtual void unpause() = 0;
+        virtual std::vector<std::unique_ptr<arcade::IEntity>> &getEntities() = 0;
 
     protected:
     private:
