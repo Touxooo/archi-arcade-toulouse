@@ -6,19 +6,19 @@
 */
 
 #ifndef VECTOR3D_HPP_
-#define VECTOR3D_HPP_
+    #define VECTOR3D_HPP_
 
-#include "IComponent.hpp"
+    #include "IComponent.hpp"
 
-namespace arcade
-{
-    class Vector3D : public IComponent
-    {
-    public:
-        Vector3D(double x, double y, double z);
-        double _x;
-        double _y;
-        double _z;
-    };
-}
+    namespace arcade {
+        class Vector3D : public IComponent {
+            public:
+                Vector3D(double x = 0, double y = 0, double z = 0) : _x(x), _y(y), _z(z) {}
+
+                double _x;
+                double _y;
+                double _z;
+        };
+    }
+
 #endif /* !VECTOR3D_HPP_ */

@@ -1,28 +1,25 @@
 /*
 ** EPITECH PROJECT, 2022
-** dev
+** RECT
 ** File description:
-** Vector3D
+** RECT
 */
 
-#ifndef RECT_HPP_
-#define RECT_HPP_
+#ifndef RECT
+    #define RECT
 
-#include "IComponent.hpp"
+    #include "IComponent.hpp"
 
-namespace arcade
-{
+    namespace arcade {
+        class Rect : public IComponent {
+            public:
+                Rect(double left = 0, double top = 0, double w = 0, double h = 0) : _left(left), _top(top), _width(w), _height(h) {}
 
-    class Rect : public arcade::IComponent
-    {
-    public:
-        Rect(double x, double y, double width, double height);
-        double _x;
-        double _y;
-        double _width;
-        double _height;
-    };
+                double _left;
+                double _top;
+                double _width;
+                double _height;
+        };
+    }
 
-}
-
-#endif /* !RECT_HPP_ */
+#endif /* !RECT */
