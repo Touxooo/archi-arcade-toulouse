@@ -31,8 +31,8 @@ typedef struct metadata {
     const char* desc;
 } metadata_t;
 
-EXPORT std::unique_ptr<arcade::IGraphical> createLibrary(arcade::ICore& core);
-EXPORT std::unique_ptr<arcade::IGame> createLibrary();
+EXPORT std::unique_ptr<arcade::IGraphical> createGraphicalLibrary(arcade::ICore& core);
+EXPORT std::unique_ptr<arcade::IGame> createGameLibrary();
 
 EXPORT metadata_t getLibraryMetadata();
 
