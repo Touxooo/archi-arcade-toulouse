@@ -18,6 +18,8 @@
 extern "C" {
 #endif
 
+#include "ICore.hpp"
+
 typedef struct metadata {
     enum { GAME,
            GRAPHIC } type;
@@ -26,7 +28,9 @@ typedef struct metadata {
     const char* desc;
 } metadata_t;
 
-EXPORT void* createLibrary();
+EXPORT void* createGameLibrary();
+
+EXPORT void* createGraphicalLibrary(arcade::ICore &core);
 
 EXPORT void deleteLibrary(void* library);
 
