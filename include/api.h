@@ -8,6 +8,10 @@
 #ifndef API_H_
 #define API_H_
 
+#include "ICore.hpp"
+#include "IGame.hpp"
+#include "IGraphical.hpp"
+
 #ifdef _WIN32
 #define EXPORT __declspec(dllexport)
 #else
@@ -17,10 +21,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#include "ICore.hpp"
-#include "IGame.hpp"
-#include "IGraphical.hpp"
 
 typedef struct metadata {
     enum { GAME,
