@@ -22,7 +22,7 @@ namespace arcade
     public:
         virtual ~IEntity() = default;
 
-        virtual std::vector<std::unique_ptr<IComponent>> &getComponents() = 0;
+        virtual std::vector<std::shared_ptr<IComponent>> &getComponents() = 0;
         // TODO: vérifier la faisibilité des tags avec juste cette méthode dans
         // l'interface
         virtual bool hasTag(const std::string &tag) = 0;
