@@ -21,6 +21,8 @@ namespace arcade
     public:
         virtual ~IScene() = default;
 
+        virtual uint32_t getSceneWidth() const = 0;
+        virtual uint32_t getSceneHeight() const = 0;
         virtual std::vector<std::shared_ptr<arcade::IEntity>> &getEntities() = 0;
 
     protected:
