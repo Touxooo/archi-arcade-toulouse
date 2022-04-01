@@ -8,6 +8,10 @@
 #ifndef API_H_
 #define API_H_
 
+#include "ICore.hpp"
+#include "IGame.hpp"
+#include "IGraphical.hpp"
+
 #ifdef _WIN32
 #define EXPORT __declspec(dllexport)
 #else
@@ -18,8 +22,6 @@
 extern "C" {
 #endif
 
-#include "ICore.hpp"
-
 typedef struct metadata {
     enum { GAME,
            GRAPHIC } type;
@@ -28,11 +30,9 @@ typedef struct metadata {
     const char* desc;
 } metadata_t;
 
-EXPORT void* createGameLibrary();
+EXPORT std::unique_ptr<arcade::IGame> createGameLibrary();
 
-EXPORT void* createGraphicalLibrary(arcade::ICore &core);
-
-EXPORT void deleteLibrary(void* library);
+EXPORT std::unique_ptr<arcade::IGraphical> createGraphicalLibrary(arcade::ICore& core);
 
 EXPORT metadata_t getLibraryMetadata();
 
