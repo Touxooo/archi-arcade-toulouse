@@ -8,6 +8,10 @@
 #ifndef API_H_
 #define API_H_
 
+#include "ICore.hpp"
+#include "IGame.hpp"
+#include "IGraphical.hpp"
+
 #ifdef _WIN32
 #define EXPORT __declspec(dllexport)
 #else
@@ -26,9 +30,9 @@ typedef struct metadata {
     const char* desc;
 } metadata_t;
 
-EXPORT void* createLibrary();
+EXPORT std::unique_ptr<arcade::IGame> createGameLibrary();
 
-EXPORT void deleteLibrary(void* library);
+EXPORT std::unique_ptr<arcade::IGraphical> createGraphicalLibrary(arcade::ICore& core);
 
 EXPORT metadata_t getLibraryMetadata();
 
