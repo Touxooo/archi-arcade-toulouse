@@ -24,7 +24,6 @@ namespace arcade
             Sound(const std::string &path, SoundStatus_t status = SoundStatus_t::PLAY) : _status(status), _filepath(path) {};
             ~Sound() = default;
 
-            // attributes
             SoundStatus_t _status;
             std::string _filepath;
 

@@ -18,7 +18,8 @@
             public:
                 Sprite2D(const std::string& file = "") : _file(file) {}
 
-                std::string _file; /* TO ENSURE A FUNCTIONNAL USE OF ALL FILE, IMAGE MUST BE IN .bmp FORMAT */
+                /* TO ENSURE A FUNCTIONNAL USE OF ALL FILE, IMAGE MUST BE IN .bmp FORMAT */
+                std::string _file;
             
             /* AN ENTITY MUST HAVE 2D AND TEXT VERSION TO ENSURE THAT ALL LIBRARIES CAN DREW IT */
         };

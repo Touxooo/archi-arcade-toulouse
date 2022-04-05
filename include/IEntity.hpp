@@ -22,8 +22,10 @@ namespace arcade
     public:
         virtual ~IEntity() = default;
 
-        virtual std::vector<std::unique_ptr<IComponent>> &getComponents() = 0; /* > returning the entity all components as a vector of IComponents */
-        virtual bool hasTag(const std::string &tag) = 0; /* > checking if the entity has the given tag */
+        /* > return all the components of an entity, as a vector of IComponents */
+        virtual std::vector<std::unique_ptr<IComponent>> &getComponents() = 0;
+        /* > check if the entity has the given tag */
+        virtual bool hasTag(const std::string &tag) = 0;
 
     protected:
     private:
