@@ -12,7 +12,7 @@
     #include "IComponent.hpp"
 
     namespace arcade {
-        class HUDText {
+        class HUDText : public IComponent {
             public:
                 HUDText(const std::string &text = "") : _text(text) {}
 
