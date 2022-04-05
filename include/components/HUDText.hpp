@@ -15,9 +15,18 @@
     namespace arcade {
         class HUDText : public IComponent {
             public:
+                typedef struct rgb_s {
+                    uint16_t r;
+                    uint16_t g;
+                    uint16_t b;
+                } rgb_t;
+
                 HUDText(const std::string& text = "") : _text(text) {}
 
                 std::string _text;
+                /* file path for the font*/
+                std::string _font;
+                rgb_t _color;
             
             /* AN ENTITY CAN EITHER BE OF THE ORDER OF THE HUD OR NOT BE. AN ENTITY WITH A COMPONENT HUD CAN'T HAVE SPRITETEXT AND/OR SPRITE2D COMPONENT(S) */
         };
