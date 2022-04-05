@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** SCALE
 ** File description:
-** SCALE
+** The Scale component set width and height value of scale for updating the image size in graphical library with graphical interface.
 */
 
 #ifndef SCALE
