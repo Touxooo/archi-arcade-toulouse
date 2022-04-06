@@ -2,7 +2,8 @@
 ** EPITECH PROJECT, 2022
 ** RECT
 ** File description:
-** RECT
+** The Rect component give the position, the width and height of an image part in the image of the Sprite2D component
+** for graphical library with graphical interface. This component is usefull for spritesheet handling/animation.
 */
 
 #ifndef RECT

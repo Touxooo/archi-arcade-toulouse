@@ -1,8 +1,9 @@
 /*
 ** EPITECH PROJECT, 2022
-** HUD_TEXT
+** SPRITE_TEXT
 ** File description:
-** HUD_TEXT
+** The HUDText component is used by all graphical libraries to display the string given by the '_text' properties.
+** This component is used to display text such as hp point, score...
 */
 
 #ifndef HUD_TEXT
@@ -14,9 +15,20 @@
     namespace arcade {
         class HUDText : public IComponent {
             public:
-                HUDText(const std::string &text = "") : _text(text) {}
+                typedef struct rgb_s {
+                    uint16_t r;
+                    uint16_t g;
+                    uint16_t b;
+                } rgb_t;
+
+                HUDText(const std::string& text = "") : _text(text) {}
 
                 std::string _text;
+                /* file path for the font*/
+                std::string _font;
+                rgb_t _color;
+            
+            /* AN ENTITY CAN EITHER BE OF THE ORDER OF THE HUD OR NOT BE. AN ENTITY WITH A COMPONENT HUD CAN'T HAVE SPRITETEXT AND/OR SPRITE2D COMPONENT(S) */
         };
     }
 

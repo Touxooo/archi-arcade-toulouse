@@ -2,7 +2,8 @@
 ** EPITECH PROJECT, 2022
 ** SPRITE_TEXT
 ** File description:
-** SPRITE_TEXT
+** The SpriteText component is used by graphical libraries with a non graphical interface (such as ncurses)
+** to display the character according to the string given by the '_text' properties.
 */
 
 #ifndef SPRITE_TEXT
@@ -17,6 +18,8 @@
                 SpriteText(const std::string& text = "") : _text(text) {}
 
                 std::string _text;
+            
+            /* AN ENTITY MUST HAVE 2D AND TEXT VERSION TO ENSURE THAT ALL LIBRARIES CAN DREW IT */
         };
     }
 

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** ARCADE
 ** File description:
-** Rotation
+** The Rotation component give the image rotation value in degree for graphical library with graphical interface.
 */
 
 #ifndef ROTATION_HPP_
