@@ -21,7 +21,12 @@
                     uint16_t b;
                 } rgb_t;
 
-                HUDText(const std::string& text = "") : _text(text) {}
+                HUDText(const std::string& text, std::string font, uint16_t r = 255, uint16_t g = 255, uint16_t b = 255) : _text(text), _font(font)
+                {
+                    _color.r = r;
+                    _color.g = g;
+                    _color.b = b;
+                }
 
                 std::string _text;
                 /* file path for the font*/
