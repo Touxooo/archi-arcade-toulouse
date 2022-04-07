@@ -23,7 +23,8 @@ extern "C" {
 #endif
 
 typedef struct metadata {
-    enum { GAME,
+    enum { UNKNOW = -1,
+           GAME,
            GRAPHIC } type;
 
     const char* name;
