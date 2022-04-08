@@ -24,6 +24,7 @@ namespace arcade
         virtual IScene &update(const std::uint64_t &deltaTime) = 0;
         virtual void manageEvents(IEvent &event) = 0;
         virtual void destroy() = 0;
+        virtual int getScore() const = 0;
 
     protected:
     private:
