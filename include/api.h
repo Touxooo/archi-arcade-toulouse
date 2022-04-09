@@ -22,8 +22,11 @@
 extern "C" {
 #endif
 
+
+
+// Structure containing the metadata of the library (type, name, description)
 typedef struct metadata {
-    enum { UNKNOW = -1,
+    enum { UNKNOWN = -1,
            GAME,
            GRAPHIC } type;
 
@@ -31,10 +34,17 @@ typedef struct metadata {
     const char* desc;
 } metadata_t;
 
+
+// Following 3 functions must be declared as extern "C" to be used by the dynamic loader
+
+
+// Entry point of the game library, create an instance of the game and return it on a unique pointer
 EXPORT std::unique_ptr<arcade::IGame> createGameLibrary();
 
+// Entry point of the graphical library, create an instance of the graphical and return it on a unique pointer
 EXPORT std::unique_ptr<arcade::IGraphical> createGraphicalLibrary(arcade::ICore& core);
 
+// Return the metadata of the library
 EXPORT metadata_t getLibraryMetadata();
 
 #ifdef __cplusplus

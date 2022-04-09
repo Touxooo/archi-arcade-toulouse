@@ -9,8 +9,9 @@
 #define ICORE_HPP_
 
 #include "IEvent.hpp"
-#include <memory>
 
+
+// Interface of the core class needed by graphical librairies to send events to the core
 namespace arcade
 {
 
@@ -18,7 +19,9 @@ namespace arcade
     {
     public:
         virtual ~ICore() = default;
-        virtual void manageEvent(arcade::IEvent &event) = 0;
+        
+        // Use by the graphical librairies to send events to the core
+        virtual void manageEvents(IEvent &event) = 0;
 
     protected:
     private:
