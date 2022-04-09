@@ -10,14 +10,23 @@
 
 namespace arcade
 {
-
+    /**
+     * This Interface is used to encapsulate all events, from any graphical
+     * library.
+     *
+     * You can consult every possible event type in the event folder from
+     * this repository.
+     */
     class IEvent
     {
     public:
         virtual ~IEvent() = default;
 
-        enum ButtonState
-        {
+        /**
+         * Describes the stated of a button. Works both for mouse and keyboard.
+         *
+         */
+        enum ButtonState {
             None = -1,
             Pressed,
             Released

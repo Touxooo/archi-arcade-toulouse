@@ -1,0 +1,80 @@
+\hypertarget{classarcade_1_1IGame}{}\doxysection{arcade\+::IGame Class Reference}
+\label{classarcade_1_1IGame}\index{arcade::IGame@{arcade::IGame}}
+
+
+System responsible for the game logic of a game.  
+
+
+
+
+{\ttfamily \#include $<$IGame.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classarcade_1_1IScene}{IScene}} \& \mbox{\hyperlink{classarcade_1_1IGame_a6ceec02a0978053a282e7b34af4a262f}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em Initializes the game, populating the scenes and returns the first scene to be rendered. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classarcade_1_1IScene}{IScene}} \& \mbox{\hyperlink{classarcade_1_1IGame_ad581cc4b4dc0880f2a595ac97f215432}{update}} (const std\+::uint64\+\_\+t \&delta\+Time)=0
+\begin{DoxyCompactList}\small\item\em Updates the current scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IGame_a594339faa9d675cbd1a785ceb0913d41}{manage\+Events}} (\mbox{\hyperlink{classarcade_1_1IEvent}{IEvent}} \&event)=0
+\begin{DoxyCompactList}\small\item\em Manages the events sent by the graphical library, through the core. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a24f234ba83c4cb4e380162e2635b9231}\label{classarcade_1_1IGame_a24f234ba83c4cb4e380162e2635b9231}} 
+virtual void \mbox{\hyperlink{classarcade_1_1IGame_a24f234ba83c4cb4e380162e2635b9231}{destroy}} ()=0
+\begin{DoxyCompactList}\small\item\em This is a method for you to do cleanup when the game is destroyed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+System responsible for the game logic of a game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1IGame_a6ceec02a0978053a282e7b34af4a262f}\label{classarcade_1_1IGame_a6ceec02a0978053a282e7b34af4a262f}} 
+\index{arcade::IGame@{arcade::IGame}!init@{init}}
+\index{init@{init}!arcade::IGame@{arcade::IGame}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classarcade_1_1IScene}{IScene}}\& arcade\+::\+IGame\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the game, populating the scenes and returns the first scene to be rendered. 
+
+\begin{DoxyReturn}{Returns}
+The current scene of the game, to be 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classarcade_1_1IGame_a594339faa9d675cbd1a785ceb0913d41}\label{classarcade_1_1IGame_a594339faa9d675cbd1a785ceb0913d41}} 
+\index{arcade::IGame@{arcade::IGame}!manageEvents@{manageEvents}}
+\index{manageEvents@{manageEvents}!arcade::IGame@{arcade::IGame}}
+\doxysubsubsection{\texorpdfstring{manageEvents()}{manageEvents()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IGame\+::manage\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1IEvent}{IEvent}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Manages the events sent by the graphical library, through the core. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event to be managed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classarcade_1_1IGame_ad581cc4b4dc0880f2a595ac97f215432}\label{classarcade_1_1IGame_ad581cc4b4dc0880f2a595ac97f215432}} 
+\index{arcade::IGame@{arcade::IGame}!update@{update}}
+\index{update@{update}!arcade::IGame@{arcade::IGame}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classarcade_1_1IScene}{IScene}}\& arcade\+::\+IGame\+::update (\begin{DoxyParamCaption}\item[{const std\+::uint64\+\_\+t \&}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the current scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & time elapsed since the last update, in miliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current scene of the game to be updated 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/IGame.\+hpp\end{DoxyCompactItemize}

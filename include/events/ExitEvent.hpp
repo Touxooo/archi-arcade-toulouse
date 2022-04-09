@@ -10,8 +10,13 @@
 
 #include "IEvent.hpp"
 
-namespace arcade {
-
+namespace arcade
+{
+    /**
+     * @brief Event to exit the program
+     *
+     *
+     */
     class ExitEvent : public IEvent
     {
     };
