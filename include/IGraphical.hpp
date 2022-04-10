@@ -35,7 +35,7 @@ namespace arcade
          *    and subsequently if the game has been destroyed and needs to be
          *    restarted.
          *
-         *    @param [out] scene this is the scene that contains
+         *    @param scene this is the scene that contains
          *    all the entities from a game Scene. It is up to the implementation
          *    to find which entities are graphical entities and which are not,
          *    using the entity's components.
@@ -50,7 +50,7 @@ namespace arcade
          *    This is where you should update the position of your sprites,
          *    unload or load textures, update sound, etc.
          *
-         *    @param [out] scene this is the scene that contains
+         *    @param scene this is the scene that contains
          *    all the entities from a game Scene. It is up to the implementation
          *    to find which entities are graphical entities and which are not,
          *    using the entity's components.
@@ -64,7 +64,7 @@ namespace arcade
          *  Typically you will destroy your window, or other library
          *  specific resources.
          *
-         *  @param [out] scene this is the scene that contains
+         *  @param scene this is the scene that contains
          *  all the entities from a game Scene. It is up to the implementation
          *  to find which entities are graphical entities and which are not,
          *  using the entity's components.

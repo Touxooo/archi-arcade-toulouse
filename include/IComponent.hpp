@@ -11,6 +11,14 @@
 
 namespace arcade
 {
+
+    /** @brief There are several components inheriting from IComponent and used
+     *  by game and graphical libraries. To create and use libraries you must
+     *  handle all components.
+     *
+     * @details YOU CAN ADD NEW COMPONENTS ONLY IF YOU USE YOUR OWN LIBRARIES
+     * DUE TO THE NECESSITY FOR ALL LIBRARIES TO KNOW THE SAME COMPONENTS
+     */
     class IComponent
     {
     public:
@@ -19,8 +27,6 @@ namespace arcade
     protected:
     private:
     };
-    /* There are several components inheriting from IComponent and used by game and graphical libraries. To create and use libraries you must handle all components. */
-    /* > YOU CAN ADD NEW COMPONENTS ONLY IF YOU USE YOUR OWN LIBRARIES DUE TO THE NECESSITY FOR ALL LIBRARIES TO KNOW THE SAME COMPONENTS */
 }
 
 #endif /* !ICOMPONENT_HPP_ */

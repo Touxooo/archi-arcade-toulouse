@@ -11,11 +11,11 @@
 namespace arcade
 {
     /**
-     * This Interface is used to encapsulate all events, from any graphical
-     * library.
+     * @brief This Interface is used to encapsulate all events, sent from any
+     * graphical library.
      *
-     * You can consult every possible event type in the event folder from
-     * this repository.
+     * @details You can consult every possible event type in the event folder
+     *  from this repository.
      */
     class IEvent
     {
@@ -23,7 +23,7 @@ namespace arcade
         virtual ~IEvent() = default;
 
         /**
-         * Describes the stated of a button. Works both for mouse and keyboard.
+         * @brief Describes the stated of a button. Works both for mouse and keyboard.
          *
          */
         enum ButtonState {
