@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['manageevents_16',['manageEvents',['../classarcade_1_1IGame.html#a594339faa9d675cbd1a785ceb0913d41',1,'arcade::IGame']]],
-  ['metadata_17',['metadata',['../structmetadata.html',1,'']]],
-  ['mouseevent_18',['MouseEvent',['../classarcade_1_1MouseEvent.html',1,'arcade']]]
+  ['key_19',['Key',['../classarcade_1_1KeyBoardEvent.html#aaa0fbae36d430d345becfaed0c238b13',1,'arcade::KeyBoardEvent']]],
+  ['keyboardevent_20',['KeyBoardEvent',['../classarcade_1_1KeyBoardEvent.html',1,'arcade']]]
 ];

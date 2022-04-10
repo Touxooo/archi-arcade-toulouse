@@ -39,7 +39,7 @@ namespace arcade
          * reference to ICore.
          * @param event The event sent to the core
          */
-        virtual void manageEvents(IEvent &event) = 0;
+        virtual void manageEvent(IEvent &event) = 0;
 
     protected:
     private:

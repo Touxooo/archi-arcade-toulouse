@@ -1,17 +1,70 @@
 \hypertarget{classarcade_1_1IScene}{}\doxysection{arcade\+::IScene Class Reference}
 \label{classarcade_1_1IScene}\index{arcade::IScene@{arcade::IScene}}
+
+
+This interface represents a scene from a game, which contains a vector of entities that describe a particular moment from a game.  
+
+
+
+
+{\ttfamily \#include $<$IScene.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1IEntity}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{classarcade_1_1IScene_a98d89ae4d14a9336f52b331307f1df80}{get\+Entities}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the entities from the scene. \end{DoxyCompactList}\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{classarcade_1_1IScene_a86d632f9220d9bba9cb5c3a0642a759f}{get\+Scene\+Width}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the Scene Width. \end{DoxyCompactList}\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{classarcade_1_1IScene_a9811000238a8db90c4f63430c1a48f85}{get\+Scene\+Height}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the Scene Height in length units. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface represents a scene from a game, which contains a vector of entities that describe a particular moment from a game. 
+
+A scene can describe a menu, a game scene, a pause menu or any other state of a game that you might want to isolate. You could also handle all your game logic from a single scene, but that is not advised. 
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classarcade_1_1IScene_a98d89ae4d14a9336f52b331307f1df80}\label{classarcade_1_1IScene_a98d89ae4d14a9336f52b331307f1df80}} 
-virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1IEntity}{IEntity}} $>$ $>$ \& {\bfseries get\+Entities} ()=0
-\item 
-\mbox{\Hypertarget{classarcade_1_1IScene_a86d632f9220d9bba9cb5c3a0642a759f}\label{classarcade_1_1IScene_a86d632f9220d9bba9cb5c3a0642a759f}} 
-virtual uint32\+\_\+t {\bfseries get\+Scene\+Width} () const =0
-\item 
+\index{arcade::IScene@{arcade::IScene}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!arcade::IScene@{arcade::IScene}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classarcade_1_1IEntity}{IEntity}}$>$ $>$\& arcade\+::\+IScene\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the entities from the scene. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\+IEntity$>$$>$ \& \+: A reference to the vector of entities contained in the scene 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classarcade_1_1IScene_a9811000238a8db90c4f63430c1a48f85}\label{classarcade_1_1IScene_a9811000238a8db90c4f63430c1a48f85}} 
-virtual uint32\+\_\+t {\bfseries get\+Scene\+Height} () const =0
-\end{DoxyCompactItemize}
+\index{arcade::IScene@{arcade::IScene}!getSceneHeight@{getSceneHeight}}
+\index{getSceneHeight@{getSceneHeight}!arcade::IScene@{arcade::IScene}}
+\doxysubsubsection{\texorpdfstring{getSceneHeight()}{getSceneHeight()}}
+{\footnotesize\ttfamily virtual uint32\+\_\+t arcade\+::\+IScene\+::get\+Scene\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the Scene Height in length units. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t \+: the scene heigth in length units 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classarcade_1_1IScene_a86d632f9220d9bba9cb5c3a0642a759f}\label{classarcade_1_1IScene_a86d632f9220d9bba9cb5c3a0642a759f}} 
+\index{arcade::IScene@{arcade::IScene}!getSceneWidth@{getSceneWidth}}
+\index{getSceneWidth@{getSceneWidth}!arcade::IScene@{arcade::IScene}}
+\doxysubsubsection{\texorpdfstring{getSceneWidth()}{getSceneWidth()}}
+{\footnotesize\ttfamily virtual uint32\+\_\+t arcade\+::\+IScene\+::get\+Scene\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the Scene Width. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t \+: the scene width in length units 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

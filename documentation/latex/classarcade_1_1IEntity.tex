@@ -1,14 +1,62 @@
 \hypertarget{classarcade_1_1IEntity}{}\doxysection{arcade\+::IEntity Class Reference}
 \label{classarcade_1_1IEntity}\index{arcade::IEntity@{arcade::IEntity}}
+
+
+This interface is used co create a game entity described by a vector of components, and a vector of tags.  
+
+
+
+
+{\ttfamily \#include $<$IEntity.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1IComponent}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{classarcade_1_1IEntity_a56b59d15c2e342615f1ab5eb404eecd3}{get\+Components}} ()=0
+\begin{DoxyCompactList}\small\item\em Getter for the components of an entity. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classarcade_1_1IEntity_aed736ee01c124f7096dd76a818f6e421}{has\+Tag}} (const std\+::string \&tag)=0
+\begin{DoxyCompactList}\small\item\em Check if the entity has the given tag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is used co create a game entity described by a vector of components, and a vector of tags. 
+
+You are expected to implement a class inheriting from \mbox{\hyperlink{classarcade_1_1IEntity}{IEntity}}, and implementing all of its virtual methods. 
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classarcade_1_1IEntity_a56b59d15c2e342615f1ab5eb404eecd3}\label{classarcade_1_1IEntity_a56b59d15c2e342615f1ab5eb404eecd3}} 
-virtual std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1IComponent}{IComponent}} $>$ $>$ \& {\bfseries get\+Components} ()=0
-\item 
+\index{arcade::IEntity@{arcade::IEntity}!getComponents@{getComponents}}
+\index{getComponents@{getComponents}!arcade::IEntity@{arcade::IEntity}}
+\doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classarcade_1_1IComponent}{IComponent}}$>$ $>$\& arcade\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Getter for the components of an entity. 
+
+we are using smart pointers to wrap our IComponents to avoid manual memory management \begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::unique\+\_\+ptr$<$\+IComponent$>$$>$ \& \+: a reference to the vector of IComponents 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classarcade_1_1IEntity_aed736ee01c124f7096dd76a818f6e421}\label{classarcade_1_1IEntity_aed736ee01c124f7096dd76a818f6e421}} 
-virtual bool {\bfseries has\+Tag} (const std\+::string \&tag)=0
-\end{DoxyCompactItemize}
+\index{arcade::IEntity@{arcade::IEntity}!hasTag@{hasTag}}
+\index{hasTag@{hasTag}!arcade::IEntity@{arcade::IEntity}}
+\doxysubsubsection{\texorpdfstring{hasTag()}{hasTag()}}
+{\footnotesize\ttfamily virtual bool arcade\+::\+IEntity\+::has\+Tag (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the entity has the given tag. 
+
+tags are used to identify different types of entities in the game, without having to check their components, saving time.
+
+Since we have not defined any common tags, you are to use tags only internally in your game, and not between a game and a graphical library. 
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& \+: the tag to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the tag is found, false otherwise 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

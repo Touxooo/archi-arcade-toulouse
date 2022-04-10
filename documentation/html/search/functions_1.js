@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['init_49',['init',['../classarcade_1_1IGame.html#a6ceec02a0978053a282e7b34af4a262f',1,'arcade::IGame::init()'],['../classarcade_1_1IGraphical.html#a7f2882efdd9d078d69cba65d864967b6',1,'arcade::IGraphical::init()']]]
+  ['getcomponents_54',['getComponents',['../classarcade_1_1IEntity.html#a56b59d15c2e342615f1ab5eb404eecd3',1,'arcade::IEntity']]],
+  ['getentities_55',['getEntities',['../classarcade_1_1IScene.html#a98d89ae4d14a9336f52b331307f1df80',1,'arcade::IScene']]],
+  ['getsceneheight_56',['getSceneHeight',['../classarcade_1_1IScene.html#a9811000238a8db90c4f63430c1a48f85',1,'arcade::IScene']]],
+  ['getscenewidth_57',['getSceneWidth',['../classarcade_1_1IScene.html#a86d632f9220d9bba9cb5c3a0642a759f',1,'arcade::IScene']]]
 ];

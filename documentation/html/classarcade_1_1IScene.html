@@ -72,19 +72,112 @@ $(function() {
 <div class="title">arcade::IScene Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This interface represents a scene from a game, which contains a vector of entities that describe a particular moment from a game.  
+ <a href="classarcade_1_1IScene.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="IScene_8hpp_source.html">IScene.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98d89ae4d14a9336f52b331307f1df80"><td class="memItemLeft" align="right" valign="top"><a id="a98d89ae4d14a9336f52b331307f1df80"></a>
-virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="classarcade_1_1IEntity.html">IEntity</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getEntities</b> ()=0</td></tr>
+<tr class="memitem:a98d89ae4d14a9336f52b331307f1df80"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="classarcade_1_1IEntity.html">IEntity</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1IScene.html#a98d89ae4d14a9336f52b331307f1df80">getEntities</a> ()=0</td></tr>
+<tr class="memdesc:a98d89ae4d14a9336f52b331307f1df80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entities from the scene.  <a href="classarcade_1_1IScene.html#a98d89ae4d14a9336f52b331307f1df80">More...</a><br /></td></tr>
 <tr class="separator:a98d89ae4d14a9336f52b331307f1df80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d632f9220d9bba9cb5c3a0642a759f"><td class="memItemLeft" align="right" valign="top"><a id="a86d632f9220d9bba9cb5c3a0642a759f"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSceneWidth</b> () const =0</td></tr>
+<tr class="memitem:a86d632f9220d9bba9cb5c3a0642a759f"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1IScene.html#a86d632f9220d9bba9cb5c3a0642a759f">getSceneWidth</a> () const =0</td></tr>
+<tr class="memdesc:a86d632f9220d9bba9cb5c3a0642a759f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Scene Width.  <a href="classarcade_1_1IScene.html#a86d632f9220d9bba9cb5c3a0642a759f">More...</a><br /></td></tr>
 <tr class="separator:a86d632f9220d9bba9cb5c3a0642a759f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9811000238a8db90c4f63430c1a48f85"><td class="memItemLeft" align="right" valign="top"><a id="a9811000238a8db90c4f63430c1a48f85"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSceneHeight</b> () const =0</td></tr>
+<tr class="memitem:a9811000238a8db90c4f63430c1a48f85"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1IScene.html#a9811000238a8db90c4f63430c1a48f85">getSceneHeight</a> () const =0</td></tr>
+<tr class="memdesc:a9811000238a8db90c4f63430c1a48f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Scene Height in length units.  <a href="classarcade_1_1IScene.html#a9811000238a8db90c4f63430c1a48f85">More...</a><br /></td></tr>
 <tr class="separator:a9811000238a8db90c4f63430c1a48f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This interface represents a scene from a game, which contains a vector of entities that describe a particular moment from a game. </p>
+<p>A scene can describe a menu, a game scene, a pause menu or any other state of a game that you might want to isolate. You could also handle all your game logic from a single scene, but that is not advised. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a98d89ae4d14a9336f52b331307f1df80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d89ae4d14a9336f52b331307f1df80">&#9670;&nbsp;</a></span>getEntities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;std::shared_ptr&lt;<a class="el" href="classarcade_1_1IEntity.html">IEntity</a>&gt; &gt;&amp; arcade::IScene::getEntities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the entities from the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt; &amp; : A reference to the vector of entities contained in the scene </dd></dl>
+
+</div>
+</div>
+<a id="a9811000238a8db90c4f63430c1a48f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9811000238a8db90c4f63430c1a48f85">&#9670;&nbsp;</a></span>getSceneHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t arcade::IScene::getSceneHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the Scene Height in length units. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t : the scene heigth in length units </dd></dl>
+
+</div>
+</div>
+<a id="a86d632f9220d9bba9cb5c3a0642a759f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d632f9220d9bba9cb5c3a0642a759f">&#9670;&nbsp;</a></span>getSceneWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t arcade::IScene::getSceneWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the Scene Width. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t : the scene width in length units </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="IScene_8hpp_source.html">IScene.hpp</a></li>
 </ul>

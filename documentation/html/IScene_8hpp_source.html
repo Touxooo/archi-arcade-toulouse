@@ -86,23 +86,25 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classarcade_1_1IScene.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1IScene.html">IScene</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1IScene.html">IScene</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt; &amp;getEntities() = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> uint32_t getSceneWidth() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> uint32_t getSceneHeight() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ISCENE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classarcade_1_1IScene.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1IScene.html">IScene</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1IScene.html">IScene</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classarcade_1_1IScene.html#a98d89ae4d14a9336f52b331307f1df80">   38</a></span>&#160;        <span class="keyword">virtual</span> std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt; &amp;<a class="code" href="classarcade_1_1IScene.html#a98d89ae4d14a9336f52b331307f1df80">getEntities</a>() = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classarcade_1_1IScene.html#a86d632f9220d9bba9cb5c3a0642a759f">   44</a></span>&#160;        <span class="keyword">virtual</span> uint32_t <a class="code" href="classarcade_1_1IScene.html#a86d632f9220d9bba9cb5c3a0642a759f">getSceneWidth</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classarcade_1_1IScene.html#a9811000238a8db90c4f63430c1a48f85">   51</a></span>&#160;        <span class="keyword">virtual</span> uint32_t <a class="code" href="classarcade_1_1IScene.html#a9811000238a8db90c4f63430c1a48f85">getSceneHeight</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ISCENE_HPP_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassarcade_1_1IScene_html"><div class="ttname"><a href="classarcade_1_1IScene.html">arcade::IScene</a></div><div class="ttdef"><b>Definition:</b> IScene.hpp:20</div></div>
+<div class="ttc" id="aclassarcade_1_1IScene_html_a9811000238a8db90c4f63430c1a48f85"><div class="ttname"><a href="classarcade_1_1IScene.html#a9811000238a8db90c4f63430c1a48f85">arcade::IScene::getSceneHeight</a></div><div class="ttdeci">virtual uint32_t getSceneHeight() const =0</div><div class="ttdoc">Gets the Scene Height in length units.</div></div>
+<div class="ttc" id="aclassarcade_1_1IScene_html"><div class="ttname"><a href="classarcade_1_1IScene.html">arcade::IScene</a></div><div class="ttdoc">This interface represents a scene from a game, which contains a vector of entities that describe a pa...</div><div class="ttdef"><b>Definition:</b> IScene.hpp:29</div></div>
+<div class="ttc" id="aclassarcade_1_1IScene_html_a86d632f9220d9bba9cb5c3a0642a759f"><div class="ttname"><a href="classarcade_1_1IScene.html#a86d632f9220d9bba9cb5c3a0642a759f">arcade::IScene::getSceneWidth</a></div><div class="ttdeci">virtual uint32_t getSceneWidth() const =0</div><div class="ttdoc">Gets the Scene Width.</div></div>
+<div class="ttc" id="aclassarcade_1_1IScene_html_a98d89ae4d14a9336f52b331307f1df80"><div class="ttname"><a href="classarcade_1_1IScene.html#a98d89ae4d14a9336f52b331307f1df80">arcade::IScene::getEntities</a></div><div class="ttdeci">virtual std::vector&lt; std::shared_ptr&lt; IEntity &gt; &gt; &amp; getEntities()=0</div><div class="ttdoc">Gets the entities from the scene.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0

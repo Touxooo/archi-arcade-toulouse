@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manageevents_50',['manageEvents',['../classarcade_1_1IGame.html#a594339faa9d675cbd1a785ceb0913d41',1,'arcade::IGame']]]
+  ['hastag_58',['hasTag',['../classarcade_1_1IEntity.html#aed736ee01c124f7096dd76a818f6e421',1,'arcade::IEntity']]]
 ];

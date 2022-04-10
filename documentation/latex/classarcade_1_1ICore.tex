@@ -1,11 +1,46 @@
 \hypertarget{classarcade_1_1ICore}{}\doxysection{arcade\+::ICore Class Reference}
 \label{classarcade_1_1ICore}\index{arcade::ICore@{arcade::ICore}}
+
+
+Interface of the core class needed by graphical librairies to send events to the core.  
+
+
+
+
+{\ttfamily \#include $<$ICore.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual void \mbox{\hyperlink{classarcade_1_1ICore_a8c0fe729e22c6602c0f187e8ddda5c99}{manage\+Events}} (\mbox{\hyperlink{classarcade_1_1IEvent}{IEvent}} \&event)=0
+\begin{DoxyCompactList}\small\item\em Used by the graphical librairies to send events to the core. This method needs to be passed as a pointer to a method along with a reference to \mbox{\hyperlink{classarcade_1_1ICore}{ICore}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface of the core class needed by graphical librairies to send events to the core. 
+
+You are expected to provide an implementation of this interface, in the form of a Core class, used to contain your libraries, both graphical and non-\/graphical.
+
+The core is also responsible for the main game loop, and measuring time between frames, aswell as loading, switching and unloading libraries.
+
+This interface exists to allow an evenmential event handling. When an event is received from a graphical library, it is sent to the core, who first checks if the event is an exit event or a library switch, and if not sends the event to the graphical library. 
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classarcade_1_1ICore_a8c0fe729e22c6602c0f187e8ddda5c99}\label{classarcade_1_1ICore_a8c0fe729e22c6602c0f187e8ddda5c99}} 
-virtual void {\bfseries manage\+Events} (\mbox{\hyperlink{classarcade_1_1IEvent}{IEvent}} \&event)=0
-\end{DoxyCompactItemize}
+\index{arcade::ICore@{arcade::ICore}!manageEvents@{manageEvents}}
+\index{manageEvents@{manageEvents}!arcade::ICore@{arcade::ICore}}
+\doxysubsubsection{\texorpdfstring{manageEvents()}{manageEvents()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+ICore\+::manage\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1IEvent}{IEvent}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Used by the graphical librairies to send events to the core. This method needs to be passed as a pointer to a method along with a reference to \mbox{\hyperlink{classarcade_1_1ICore}{ICore}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event sent to the core \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

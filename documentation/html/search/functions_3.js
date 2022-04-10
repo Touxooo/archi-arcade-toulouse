@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_51',['update',['../classarcade_1_1IGame.html#ad581cc4b4dc0880f2a595ac97f215432',1,'arcade::IGame::update()'],['../classarcade_1_1IGraphical.html#a61598c9f22c5fb2f834daf2af6f7c793',1,'arcade::IGraphical::update()']]]
+  ['init_59',['init',['../classarcade_1_1IGame.html#a6ceec02a0978053a282e7b34af4a262f',1,'arcade::IGame::init()'],['../classarcade_1_1IGraphical.html#a7f2882efdd9d078d69cba65d864967b6',1,'arcade::IGraphical::init()']]]
 ];

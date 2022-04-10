@@ -37,8 +37,8 @@ This method is called to do cleanup before quitting your graphical library.
 Typically you will destroy your window, or other library specific resources.
 
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ out}}  & {\em scene} & this is the scene that contains all the entities from a game Scene. It is up to the implementation to find which entities are graphical entities and which are not, using the entity\textquotesingle{}s components.\\
+\begin{DoxyParams}{Parameters}
+{\em scene} & this is the scene that contains all the entities from a game Scene. It is up to the implementation to find which entities are graphical entities and which are not, using the entity\textquotesingle{}s components.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -57,8 +57,8 @@ That can be a window, a texture / sprite cache, fonts, etc.
 This method is called once at the beginning of the game, and subsequently if the game has been destroyed and needs to be restarted.
 
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ out}}  & {\em scene} & this is the scene that contains all the entities from a game Scene. It is up to the implementation to find which entities are graphical entities and which are not, using the entity\textquotesingle{}s components.\\
+\begin{DoxyParams}{Parameters}
+{\em scene} & this is the scene that contains all the entities from a game Scene. It is up to the implementation to find which entities are graphical entities and which are not, using the entity\textquotesingle{}s components.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -75,8 +75,8 @@ The update method is called when the game needs to be rendered. That doesn\textq
 This is where you should update the position of your sprites, unload or load textures, update sound, etc.
 
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ out}}  & {\em scene} & this is the scene that contains all the entities from a game Scene. It is up to the implementation to find which entities are graphical entities and which are not, using the entity\textquotesingle{}s components.\\
+\begin{DoxyParams}{Parameters}
+{\em scene} & this is the scene that contains all the entities from a game Scene. It is up to the implementation to find which entities are graphical entities and which are not, using the entity\textquotesingle{}s components.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

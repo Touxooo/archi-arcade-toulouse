@@ -81,28 +81,26 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;IEvent.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Interface of the core class needed by graphical librairies to send events to the core</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>arcade</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classarcade_1_1ICore.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1ICore.html">ICore</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1ICore.html">ICore</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">// Use by the graphical librairies to send events to the core</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> manageEvents(<a class="code" href="classarcade_1_1IEvent.html">IEvent</a> &amp;event) = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ICORE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>arcade</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classarcade_1_1ICore.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1ICore.html">ICore</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1ICore.html">ICore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classarcade_1_1ICore.html#a8c0fe729e22c6602c0f187e8ddda5c99">   42</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1ICore.html#a8c0fe729e22c6602c0f187e8ddda5c99">manageEvents</a>(<a class="code" href="classarcade_1_1IEvent.html">IEvent</a> &amp;event) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ICORE_HPP_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassarcade_1_1ICore_html"><div class="ttname"><a href="classarcade_1_1ICore.html">arcade::ICore</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:19</div></div>
-<div class="ttc" id="aclassarcade_1_1IEvent_html"><div class="ttname"><a href="classarcade_1_1IEvent.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:21</div></div>
+<div class="ttc" id="aclassarcade_1_1ICore_html"><div class="ttname"><a href="classarcade_1_1ICore.html">arcade::ICore</a></div><div class="ttdoc">Interface of the core class needed by graphical librairies to send events to the core.</div><div class="ttdef"><b>Definition:</b> ICore.hpp:33</div></div>
+<div class="ttc" id="aclassarcade_1_1ICore_html_a8c0fe729e22c6602c0f187e8ddda5c99"><div class="ttname"><a href="classarcade_1_1ICore.html#a8c0fe729e22c6602c0f187e8ddda5c99">arcade::ICore::manageEvents</a></div><div class="ttdeci">virtual void manageEvents(IEvent &amp;event)=0</div><div class="ttdoc">Used by the graphical librairies to send events to the core. This method needs to be passed as a poin...</div></div>
+<div class="ttc" id="aclassarcade_1_1IEvent_html"><div class="ttname"><a href="classarcade_1_1IEvent.html">arcade::IEvent</a></div><div class="ttdoc">This Interface is used to encapsulate all events, sent from any graphical library.</div><div class="ttdef"><b>Definition:</b> IEvent.hpp:21</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
