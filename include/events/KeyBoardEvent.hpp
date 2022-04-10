@@ -11,12 +11,16 @@
 
 namespace arcade
 {
-
+    /**
+     * @brief Event describing a keypress.
+     *
+     *
+     */
     class KeyBoardEvent : public IEvent
     {
     public:
-        enum Key
-        {
+        /// @brief Describes which key is pressed.
+        enum Key {
             Unknown = -1,
             A = 0,
             B,
@@ -128,8 +132,9 @@ namespace arcade
         };
 
         KeyBoardEvent(const Key &key, ButtonState state) : _key(key), _state(state){};
-
+        /// @brief Key value
         Key _key;
+        /// @brief Key state using the enum described in IEvent.
         ButtonState _state;
     };
 }

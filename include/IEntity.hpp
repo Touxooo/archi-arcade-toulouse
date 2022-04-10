@@ -17,21 +17,46 @@
 namespace arcade
 {
 
+    /**
+     * @brief This interface is used co create a game entity described by a
+     * vector of components, and a vector of tags.
+     *
+     * You are expected to implement a class inheriting from IEntity, and
+     * implementing all of its virtual methods.
+     */
     class IEntity
     {
     public:
         virtual ~IEntity() = default;
 
-        /* > return all the components of an entity, as a vector of IComponents */
+        /** @brief Getter for the components of an entity
+         *
+         * @details we are using smart pointers to wrap our IComponents to avoid
+         * manual memory management
+         * @return std::vector<std::unique_ptr<IComponent>> & : a reference to
+         * the vector of IComponents
+         */
         virtual std::vector<std::unique_ptr<IComponent>> &getComponents() = 0;
-        /* > check if the entity has the given tag */
+
+        /**
+         * @brief Check if the entity has the given tag
+         *
+         * @details tags are used to identify different types of entities in the
+         * game, without having to check their components, saving time.
+         *
+         * Since we have not defined any common tags, you are to use tags only
+         * internally in your game, and not between a game and a graphical
+         * library.
+         * @param const std::string & : the tag to check
+         *
+         * @returns true if the tag is found, false otherwise
+         *
+         */
         virtual bool hasTag(const std::string &tag) = 0;
 
     protected:
     private:
     };
-    /* In order to use the IEntity class, a class (not virtual) must be created an inherit from IEntity.
-    This class must possess 2 proprieties to contain the entity's components and the entity's tags. */
 }
 
 #endif /* !IENTITY_HPP_ */
