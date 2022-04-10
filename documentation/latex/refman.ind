@@ -1,0 +1,75 @@
+\begin{theindex}
+
+  \item {arcade::ExitEvent}, \hyperpage{5}
+  \item {arcade::HUDText}, \hyperpage{5}
+  \item {arcade::HUDText::rgb\_s}, \hyperpage{17}
+  \item {arcade::IComponent}, \hyperpage{6}
+  \item {arcade::ICore}, \hyperpage{7}
+    \subitem {manageEvents}, \hyperpage{7}
+  \item {arcade::IEntity}, \hyperpage{8}
+    \subitem {getComponents}, \hyperpage{8}
+    \subitem {hasTag}, \hyperpage{8}
+  \item {arcade::IEvent}, \hyperpage{9}
+  \item {arcade::IGame}, \hyperpage{9}
+    \subitem {init}, \hyperpage{10}
+    \subitem {manageEvents}, \hyperpage{10}
+    \subitem {update}, \hyperpage{10}
+  \item {arcade::IGraphical}, \hyperpage{11}
+    \subitem {destroy}, \hyperpage{11}
+    \subitem {init}, \hyperpage{12}
+    \subitem {update}, \hyperpage{12}
+  \item {arcade::IScene}, \hyperpage{13}
+    \subitem {getEntities}, \hyperpage{13}
+    \subitem {getSceneHeight}, \hyperpage{13}
+    \subitem {getSceneWidth}, \hyperpage{14}
+  \item {arcade::KeyBoardEvent}, \hyperpage{14}
+  \item {arcade::MouseEvent}, \hyperpage{16}
+  \item {arcade::Rect}, \hyperpage{17}
+  \item {arcade::Rotation}, \hyperpage{18}
+  \item {arcade::Scale}, \hyperpage{18}
+  \item {arcade::Sound}, \hyperpage{19}
+  \item {arcade::Sprite2D}, \hyperpage{19}
+  \item {arcade::SpriteText}, \hyperpage{20}
+  \item {arcade::Vector3D}, \hyperpage{20}
+
+  \indexspace
+
+  \item {destroy}
+    \subitem {arcade::IGraphical}, \hyperpage{11}
+
+  \indexspace
+
+  \item {getComponents}
+    \subitem {arcade::IEntity}, \hyperpage{8}
+  \item {getEntities}
+    \subitem {arcade::IScene}, \hyperpage{13}
+  \item {getSceneHeight}
+    \subitem {arcade::IScene}, \hyperpage{13}
+  \item {getSceneWidth}
+    \subitem {arcade::IScene}, \hyperpage{14}
+
+  \indexspace
+
+  \item {hasTag}
+    \subitem {arcade::IEntity}, \hyperpage{8}
+
+  \indexspace
+
+  \item {init}
+    \subitem {arcade::IGame}, \hyperpage{10}
+    \subitem {arcade::IGraphical}, \hyperpage{12}
+
+  \indexspace
+
+  \item {manageEvents}
+    \subitem {arcade::ICore}, \hyperpage{7}
+    \subitem {arcade::IGame}, \hyperpage{10}
+  \item {metadata}, \hyperpage{16}
+
+  \indexspace
+
+  \item {update}
+    \subitem {arcade::IGame}, \hyperpage{10}
+    \subitem {arcade::IGraphical}, \hyperpage{12}
+
+\end{theindex}
