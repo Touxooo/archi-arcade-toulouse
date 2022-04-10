@@ -18,7 +18,8 @@ namespace arcade
             typedef enum SoundStatus_e {
                 PLAY,
                 PAUSE,
-                STOP
+                STOP,
+                LOOP
             } SoundStatus_t;
 
             Sound(const std::string &path, SoundStatus_t status = SoundStatus_t::PLAY) : _status(status), _filepath(path) {};
